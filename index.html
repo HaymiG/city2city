@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meridian Travel Co. - Plan your next adventure with our curated travel packages and exceptional service.">
+    <title>Home | City2City Tours</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container nav-bar">
+            <a href="index.html" class="logo">City2City Tours</a>
+            <nav class="primary-nav" aria-label="Main Navigation">
+                <button class="nav-toggle" aria-controls="nav-menu" aria-expanded="false" aria-label="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul id="nav-menu" class="nav-menu" data-visible="false">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- HERO IMAGE UPDATED -->
+        <section class="hero" aria-label="Welcome to Meridian Travel Co.">
+            <div class="hero-bg" style="background-image: url('images/hero.jpg');"></div>
+            <div class="hero-content">
+                <h1>Unlock Your Next Great Adventure</h1>
+                <p class="tagline">Curated journeys, exceptional experiences, and seamless travel planning.</p>
+                <a href="#packages" class="button primary-button">Explore Tours</a>
+            </div>
+        </section>
+
+        <section id="packages" class="section featured-packages">
+            <div class="container">
+                <h2>Our Featured Packages</h2>
+                <div class="card-grid">
+
+                    <!-- IMAGE UPDATED → images/europe.jpg -->
+                    <article class="card package-card">
+                        <img src="images/europe.jpg" alt="Scenic European city view">
+                        <div class="card-body">
+                            <h3>European Escapes</h3>
+                            <p>Discover the history and romance of the continent with our exclusive guided tours.</p>
+                            <a href="#" class="button secondary-button">Learn More</a>
+                        </div>
+                    </article>
+
+                    <!-- IMAGE UPDATED → images/beach.jpg -->
+                    <article class="card package-card">
+                        <img src="images/beach.jpg" alt="White sand tropical beach">
+                        <div class="card-body">
+                            <h3>Tropical Getaways</h3>
+                            <p>Relax on pristine beaches and explore vibrant coral reefs in exotic destinations.</p>
+                            <a href="#" class="button secondary-button">Learn More</a>
+                        </div>
+                    </article>
+
+                    <!-- IMAGE UPDATED → images/trek.jpg -->
+                    <article class="card package-card">
+                        <img src="images/trek.jpg" alt="Mountain hiking trail">
+                        <div class="card-body">
+                            <h3>Adventure Treks</h3>
+                            <p>Challenge yourself with thrilling hikes and expeditions in the world's most remote regions.</p>
+                            <a href="#" class="button secondary-button">Learn More</a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIALS -->
+        <section class="section testimonials-section">
+            <div class="container">
+                <h2>What Our Travelers Say</h2>
+
+                <div class="testimonial-slider-container">
+                    <div class="testimonial-slider" id="testimonial-slider" aria-live="polite" aria-label="Customer Testimonials">
+
+                        <blockquote class="testimonial-slide active" tabindex="0">
+                            <p>"City2City Tours planned the trip of a lifetime. Seamless logistics and incredible attention to detail. Highly recommend!"</p>
+                            <cite>— Sarah Lema, Adventurer</cite>
+                        </blockquote>
+
+                        <blockquote class="testimonial-slide" tabindex="-1">
+                            <p>"The tailored itinerary was perfect for our family. Every hotel and activity exceeded expectations. Truly a 5-star service."</p>
+                            <cite>— Dawit & Melat , Family Vacationers</cite>
+                        </blockquote>
+
+                        <blockquote class="testimonial-slide" tabindex="-1">
+                            <p>"Their 24/7 support saved us when our flight was canceled. Professional, reliable, and always there when you need them."</p>
+                            <cite>— Abebe , Business Traveler</cite>
+                        </blockquote>
+
+                    </div>
+
+                    <button class="slider-control prev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="slider-control next" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider-dots" role="tablist">
+                    <button class="dot active"></button>
+                    <button class="dot"></button>
+                    <button class="dot"></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="section newsletter-section bg-primary-light">
+            <div class="container">
+                <h2>Stay Updated</h2>
+                <p>Subscribe to our newsletter for exclusive travel deals and inspiration.</p>
+
+                <form id="newsletter-form" class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+                        <button class="button primary-button" type="submit">Subscribe</button>
+                    </div>
+                    <div id="newsletter-message" class="message success-message" style="display:none;"></div>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>© 2025 City2City Tours All rights reserved.</p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
